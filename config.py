@@ -3,7 +3,7 @@ import sys
 from configparser import ConfigParser, NoSectionError
 
 
-APP_NAME = "dimagi/required-labels"
+APP_NAME = "snapdocs/required-labels"
 
 
 class ConfigException(Exception):

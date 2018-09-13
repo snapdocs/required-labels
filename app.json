@@ -1,7 +1,7 @@
 {
     "name": "required-labels",
     "description": "Automated label checking for github pull requests",
-    "repository": "https://github.com/dimagi/required-labels",
+    "repository": "https://github.com/snapdocs/required-labels",
     "keywords": [
         "github",
         "labels",
