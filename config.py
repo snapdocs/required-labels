@@ -31,7 +31,7 @@ BANNED_LABELS = banned.split(',') if banned else None
 
 
 def get_credentials():
-    if GITHUB_TOKEN
+    if GITHUB_TOKEN == '':
         return None
     else:
         return GITHUB_TOKEN
@@ -42,7 +42,7 @@ UNIT_TESTING = any([arg for arg in sys.argv if 'test' in arg])
 
 if not UNIT_TESTING:
     labels_configured = any([REQUIRED_LABELS_ANY, REQUIRED_LABELS_ALL, BANNED_LABELS])
-    credentials_configured = all([GITHUB_TOKEN])
+    credentials_configured = (GITHUB_TOKEN != None)
     if not labels_configured or not credentials_configured:
         raise ConfigException(
             "Please ensure your config file has a [Labels] and [Github] section.\n"
