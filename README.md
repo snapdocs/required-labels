@@ -43,8 +43,7 @@ Set up the required labels (comma separated):
 
 Enter the credentials:
 
-- `GITHUB_USER`: The username of the GitHub user that will post the status. We suggest you create a dummy github user for this purpose. This user *must* have permission to write to the repo in order for it to post a status. 
-- `GITHUB_PW`: The password for this GitHub user.
+- `GITHUB_TOKEN`: The Github Personal Access token
 
 Click "deploy app". The app will deploy.
 

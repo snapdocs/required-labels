@@ -5,8 +5,7 @@ from config import get_credentials, APP_NAME
 
 
 session = Session()
-session.auth = get_credentials()
-session.headers.update({"User-Agent": APP_NAME})
+session.headers.update({"User-Agent": APP_NAME, "Authorization": "token a8e6eb60ae3308fff3db53c003a4023cf127ab6d"})
 
 
 class PullRequest(object):
